@@ -34,14 +34,14 @@
 ;; Tests
 (subst-teacher (make-student 'Find 'Matthew 'Fritz) 'Elise)
 ;; Excpected value:
-(make-student 'Find 'Matthew 'Elise)
+(make-student 'Find 'Matthew 'Elise')
 
 (subst-teacher (make-student 'Find 'Matthew 'Amanada) 'Elise)
 ;; Excpected value:
 (make-student 'Find 'Matthew 'Amanda)
 
 
-
+(define-struct student (last first teacher))
 (make-student 'findler 'kathi 'matthias)
 (make-student 'fisler 'sean 'matthias)
 (make-student 'flatt 'shriram 'matthias)
